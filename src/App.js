@@ -8,8 +8,8 @@ import {takeUntil} from "rxjs/operators";
 
 function App() {
 
-    let [isRunning, setIsRunning] = useState(false)
-    let [currentTimer, setCurrentTimer] = useState(0)
+    let [isRunning, setIsRunning] = useState(false);
+    let [currentTimer, setCurrentTimer] = useState(0);
     let [firstClickTime, setFirstClickTime] = useState(0);
 
     useEffect(() => {
@@ -29,32 +29,32 @@ function App() {
     }, [isRunning])
 
     let startHandler = () => {
-        setIsRunning(true)
+        setIsRunning(true);
     }
     let stopHandler = () => {
-        setIsRunning(false)
-        setCurrentTimer(0)
+        setIsRunning(false);
+        setCurrentTimer(0);
    }
     let waitHandler = () => {
         if( !firstClickTime) {
-            let firstClick = Date.now()
-            setFirstClickTime( firstClick )
-            return null
+            let firstClick = Date.now();
+            setFirstClickTime( firstClick );
+            return null;
         } else {
             let secondClick = Date.now()
             let difference = secondClick - firstClickTime;
             if( difference < 300 ) {
-                console.log('waiting')
-                setIsRunning(false)
-                setFirstClickTime(0)
+                console.log('waiting');
+                setIsRunning(false);
+                setFirstClickTime(0);
             }
-            setFirstClickTime(0)
+            setFirstClickTime(0);
         }
     }
     let resetHandler = () => {
         setIsRunning(false);
         setCurrentTimer(0);
-
+        setTimeout(startHandler, 1000)
     }
 
   return (
@@ -67,7 +67,6 @@ function App() {
                 { new Date(currentTimer).toISOString().slice(11, 19) }
             </span>
         </div>
-
         <div>
             <button className="btn btn-primary" onClick={startHandler}>start</button>
             <button className="btn btn-danger" onClick={stopHandler}>stop</button>
