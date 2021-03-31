@@ -30,7 +30,6 @@ function App() {
 
     let startHandler = () => {
         setIsRunning(true)
-
     }
     let stopHandler = () => {
         setIsRunning(false)
@@ -53,7 +52,9 @@ function App() {
         }
     }
     let resetHandler = () => {
-        setCurrentTimer(0)
+        setIsRunning(false);
+        setCurrentTimer(0);
+
     }
 
   return (
