@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/RxJsTimer/static/css/main.b03e664f.chunk.css",
-    "main.js": "/RxJsTimer/static/js/main.7c03544d.chunk.js",
-    "main.js.map": "/RxJsTimer/static/js/main.7c03544d.chunk.js.map",
+    "main.js": "/RxJsTimer/static/js/main.c8eb8835.chunk.js",
+    "main.js.map": "/RxJsTimer/static/js/main.c8eb8835.chunk.js.map",
     "runtime-main.js": "/RxJsTimer/static/js/runtime-main.80667db0.js",
     "runtime-main.js.map": "/RxJsTimer/static/js/runtime-main.80667db0.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/RxJsTimer/static/css/2.4c97ca4f.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.c5995580.chunk.js",
     "static/css/main.b03e664f.chunk.css",
-    "static/js/main.7c03544d.chunk.js"
+    "static/js/main.c8eb8835.chunk.js"
   ]
 }
